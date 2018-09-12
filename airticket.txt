@@ -1,0 +1,19 @@
+create database airticketing;
+create table flight
+(
+flight_num int,
+airline_name varchar(100),
+destinatn varchar(100),
+source varchar(100),
+dept_time float,
+arriv_time float,
+price float
+)
+insert into flight (flight_num ,airline_name, destinatn , source , dept_time , arriv_time, price) values(110099,jet airways,'agar','mumbai',13;12,11;30,5000);
+insert into flight (flight_num ,airline_name, destinatn , source , dept_time , arriv_time, price) values(110011,indigo,'bangalore','delhi',12;30,14;20,4000);
+insert into flight (flight_num ,airline_name, destinatn , source , dept_time , arriv_time, price) values(110014,vistara,'pune','goa',12;30,14;20,7000);
+select airline_name, price from flight 
+where destinatn = 'mumbai ' AND price<7000;
+select airline_name from flight 
+where dept_time = 11:05;
+
